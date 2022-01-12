@@ -1,0 +1,32 @@
+{
+	"name": "@ljn/utils",
+	"version": "1.30.2",
+	"description": "Reusable utility functions for LJN projects",
+	"license": "LicenseRef-LICENSE",
+	"author": "La Javaness <dev@lajavaness.com>",
+	"sideEffects": false,
+	"exports": {
+		"import": {
+			".": "./esm/index.js",
+			"./*": "./esm/*.js"
+		},
+		"require": "./build/bundle.js"
+	},
+	"basicExports": {
+		".": "./esm/index.js",
+		"./*": "./esm/*.js"
+	},
+	"main": "build/bundle.js",
+	"module": "esm/index.js",
+	"browser": "build/bundle.min.js",
+	"files": [
+		"build",
+		"esm"
+	],
+	"dependencies": {
+		"@babel/runtime": "^7.16.7"
+	},
+	"publishConfig": {
+		"access": "restricted"
+	}
+}
